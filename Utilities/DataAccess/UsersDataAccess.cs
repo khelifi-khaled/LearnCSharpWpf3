@@ -13,6 +13,8 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
 {
     public abstract class UsersDataAccess : IUsersDataAccess
 
+
+
     {
         private string _accessPath;
 
