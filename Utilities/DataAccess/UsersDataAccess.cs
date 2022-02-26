@@ -12,6 +12,9 @@ using System.Windows;
 namespace LearnCSharpWpf3.Utilities.DataAccess
 {
     public abstract class UsersDataAccess : IUsersDataAccess
+
+        //la ver new new françois
+        //sijapdjazpoj
     {
         private string _accessPath;
 

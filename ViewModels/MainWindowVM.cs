@@ -42,7 +42,7 @@ namespace LearnCSharpWpf3.ViewModels
         /// </summary>
         public UsersDataAccess UsersDataAccess { get; set; }
 
-
+        
     }//end class 
 
 }//end class 
