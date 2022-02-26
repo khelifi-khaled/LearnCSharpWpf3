@@ -46,17 +46,9 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
 
         private  User  GetUser(string line)
         {
-            List<string> listFileReader = new List<string>();
-
-            listFileReader = System.IO.File.ReadAllLines(AccessPath).ToList();
-
-          
                 string[] fields = line.Split(',');
-
-
                 switch (fields[0])
-                {
-
+                { 
                     case "Electrician":
 
                         return new Electrician(int.Parse((fields[11])) != 0 ? true : false, int.Parse((fields[12])) !=0 ? true : false, int.Parse((fields[12])) != 0 ? true : false, int.Parse((fields[10])) != 0 ? true : false, double.Parse((fields[15])), DateTime.Parse(fields[7]), fields[2], fields[1], int.Parse(fields[3]), int.Parse(fields[5]), fields[6], User.PhotosPathDir + fields[8], int.Parse((fields[4])) != 0 ? true : false);
@@ -99,8 +91,9 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
 
         public override  void UpdateAllUsersDatas(UserCollection uc) { }
 
-        public override void UpdateUserDatas(User u) { } 
-    }
+        public override void UpdateUserDatas(User u) { }
+
+    }//end UsersDataAccessCsvFile
 
 
-    }
+}//end project 
