@@ -1,0 +1,12 @@
+Type,FirstName,LastName,idUser,Gender,LevelAccess,Password,Birthday,Picture,IsNewOrderConcerned,IsOnCall,IsBA4,IsBA5,HighVoltage,IsWelder,OverTime
+Electrician,Damien,Beumier,0,1,1,Bidule01,20-03-63,beumier.jpg,0,0,1,1,0,,0
+Secretary,Sophie,Deroisin,1,0,1,Pourquoi1000,18-08-99,deroisin.jpg,0,,,,,,
+Electrician,Pierre,Durant,2,1,1,Ampoule23,23-05-98,durant.jpg,0,1,1,1,1,,0
+Mechanic,Steve,Flaux,3,1,1,444Septunoeuf,14-01-95,,0,0,0,,,1,0
+DirHumanRessources,Veronique,Deroisin,4,0,3,CestSharp01,29-08-84,deroisinv.jpg,0,,,,,,
+WorkShopSupervisor,Cedric,Duquenne,5,1,2,TrucMachin05,30-10-79,duquenne.jpg,0,,,,,,
+Mechanic,Sebastien,Vandersmissen,6,1,1,JaimeLeLait8,05-12-00,vandersmissen.jpg,0,1,1,,,0,120
+AccountingOfficer,Deborah,Gilson,7,0,2,Corentin6,01-06-01,gilson.jpg,1,,,,,,
+SalesMan,Tony,Maggi,8,1,2,Tonmag2000,24-11-97,maggi.jpg,0,,,,,,
+CEO,Daniel,Tirion,9,1,4,DaTir007,09-02-90,tirion.jpg,0,,,,,,
+WorkShopSupervisor,Loic,Verdin,10,1,2,Password01,05-07-92,verdin.jpg,1,,,,,,

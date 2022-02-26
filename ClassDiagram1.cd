@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LearnCSharpWpf3.Models.User" Collapsed="true">
+    <Position X="6" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EBUAkEAABAAA4BCQAEUJAEAAAAEIAIACAAAQpIABAAw=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.Worker">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAiAAAABAAAABIAAigIAAAIAAIAACAAAAgAAAAAAEAA=</HashCode>
+      <FileName>Models\Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.WorkshopSupervisor">
+    <Position X="0.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\WorkshopSupervisor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.TechnicalDir">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TechnicalDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.Secretary">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Secretary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.SalesMan">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SalesMan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.Electrician">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAgAAAABAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Electrician.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.Mechanic">
+    <Position X="3.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Mechanic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.AccountingOfficer">
+    <Position X="14.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountingOfficer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.DirHumanRessors">
+    <Position X="17.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DieHumanRessors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnCSharpWpf3.Models.CEO">
+    <Position X="19.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CEO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
