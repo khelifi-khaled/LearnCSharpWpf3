@@ -21,7 +21,7 @@ namespace LearnCSharpWpf3.ViewModels
             User.PicPathDir = PHOTOS_PATH_DIR;
             //old version with only csv DataAccessV.
           
-            //UserDataAccessCsvFile uda = new UserDataAccessCsvFile(USERS_CSV_FILE);
+            //UsersDataAccessCsvFile uda = new UsersDataAccessCsvFile(USERS_CSV_FILE);
             //uncomment if data source is a csv file
             //UsersDataAccess = new UsersDataAccessCsvFile(USERS_CSV_FILE,new string[]{"txt","csv"});
             //uncomment if datas source is a json file
@@ -29,6 +29,16 @@ namespace LearnCSharpWpf3.ViewModels
             //uncomment if datas source is a xml file
             //UsersDataAccess = new UsersDataAccessXmlFile(USERS_XML_FILE, new string[]{"xml","txt"});
             Users = UsersDataAccess.GetUsersDatas(); //get users collection datas from DataAccessSource(csv, json...).
+
+
+
+
+            // pour exporter les fichiers de csv to json
+           
+            //UsersDataAccessJsonFile UsersDataAccessForJsonSave = new UsersDataAccessJsonFile(@"C:\temp\JsonUtilisateurs.json", new string[] { "json" });
+            //UsersDataAccessForJsonSave.UpdateAllUsersDatas(Users);
+
+
         }
 
 

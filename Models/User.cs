@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -545,5 +547,21 @@ namespace LearnCSharpWpf3.Models
 
 
     }//END CLASS
+
+
+    public class CustomDateTimeConverter : IsoDateTimeConverter
+    {
+        public CustomDateTimeConverter()
+        {
+            DateTimeFormat = "yyyy-MM-dd";
+        }
+
+        public CustomDateTimeConverter(string format)
+        {
+            DateTimeFormat = format;
+        }
+    }
+
+
 }//END PROJET
 
