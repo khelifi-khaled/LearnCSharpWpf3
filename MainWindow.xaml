@@ -36,6 +36,7 @@
                 <Button x:Name="ButtonTestPolymorphisme" Content="Test Polymorphisme" HorizontalAlignment="Center" Width="200" Click="ButtonTestPolymorphisme_Click"/>
                 <Button x:Name="ButtonHideMethod" Content="Button Hide Method" HorizontalAlignment="Center" Width="200" Click="ButtonHideMethod_Click_1"/>
                 <Button x:Name="ButtonOverrideMethod_Click" Content="Button Override Method" HorizontalAlignment="Center" Width="200" Click="ButtonOverrideMethod_Click_1"/>
+                <Button x:Name="ButtonTestBinding" Content="Button Test Binding" HorizontalAlignment="Center" Width="200" Click="ButtonTestBinding_Click"/>
 
 
 
@@ -43,5 +44,10 @@
 
             </StackPanel>
         </Grid>
+        
+        
     </StackPanel>
+    
+    
+    
 </Window>

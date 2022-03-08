@@ -33,19 +33,25 @@ namespace LearnCSharpWpf3.ViewModels
 
 
 
+
+
             // pour exporter les fichiers de csv to json
-           
+
             //UsersDataAccessJsonFile UsersDataAccessForJsonSave = new UsersDataAccessJsonFile(@"C:\temp\JsonUtilisateurs.json", new string[] { "json" });
             //UsersDataAccessForJsonSave.UpdateAllUsersDatas(Users);
 
+            Company = new Company("SOLUTECH", "3 Boulevard de la victoire 7000 Mons", "BE 0123.654.789", "info@solutech.com", Users);
 
-        }
+
+        }//end constructeur 
 
 
         /// <summary>
         /// Collection of all users in the databse (source file)
         /// </summary>
         public UserCollection Users { get; set; }
+
+        public Company Company { get; set; }
 
         /// <summary>
         /// Manager to the users data access (Csv, Json, XAML, SQL...)

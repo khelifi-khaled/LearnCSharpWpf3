@@ -385,6 +385,14 @@ namespace LearnCSharpWpf3.Views
             }
 
         }//end ButtonOverrideMethod_Click_1
+
+        private void ButtonTestBinding_Click(object sender, RoutedEventArgs e)
+        {
+            CompanyWindow cwin = new CompanyWindow(MainVM.Company);
+            cwin.Show();
+        }
+
+
     }//end class
 
 }//end project 
