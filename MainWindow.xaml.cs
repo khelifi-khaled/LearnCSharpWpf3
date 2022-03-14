@@ -1,5 +1,6 @@
 ﻿using LearnCSharpWpf3.Models;
 using LearnCSharpWpf3.ViewModels;
+using LearnCSharpWpf3.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,7 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LearnCSharpWpf3.Views
+namespace LearnCSharpWpf3
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -31,9 +32,9 @@ namespace LearnCSharpWpf3.Views
         public MainWindow()
         {
             MainVM = new MainWindowVM();
-
             DataContext = MainVM;
             InitializeComponent();
+
         }
         private void ButtonTestCreateFirstUsers_Click(object sender, RoutedEventArgs e)
         {

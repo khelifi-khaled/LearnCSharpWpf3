@@ -1,9 +1,9 @@
-﻿<Window x:Class="LearnCSharpWpf3.Views.MainWindow"
+﻿<Window x:Class="LearnCSharpWpf3.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LearnCSharpWpf3.Views"
+        xmlns:local="clr-namespace:LearnCSharpWpf3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <StackPanel>
@@ -26,6 +26,7 @@
                 </ListView>
             </StackPanel>
             <StackPanel Grid.Column="1">
+                
                 <Button x:Name="ButtonTestCreateFirstUsers" Content="Test create my first users" HorizontalAlignment="Center" Width="200" Click="ButtonTestCreateFirstUsers_Click"/>
                 <Button x:Name="ButtonTestEncapsulation" Content="Test encapsulation" HorizontalAlignment="Center" Width="200" Click="ButtonTestEncapsulation_Click"/>
                 <Button x:Name="ButtonTestStatic" Content="Test static" HorizontalAlignment="Center" Width="200" Click="ButtonTestStatic_Click"/>
@@ -37,10 +38,6 @@
                 <Button x:Name="ButtonHideMethod" Content="Button Hide Method" HorizontalAlignment="Center" Width="200" Click="ButtonHideMethod_Click_1"/>
                 <Button x:Name="ButtonOverrideMethod_Click" Content="Button Override Method" HorizontalAlignment="Center" Width="200" Click="ButtonOverrideMethod_Click_1"/>
                 <Button x:Name="ButtonTestBinding" Content="Button Test Binding" HorizontalAlignment="Center" Width="200" Click="ButtonTestBinding_Click"/>
-
-
-
-
 
             </StackPanel>
         </Grid>

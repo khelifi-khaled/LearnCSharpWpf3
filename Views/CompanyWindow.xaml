@@ -15,25 +15,23 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Margin="10,10" Grid.Column="0">
                     <Label Content="Nom de la scociété :" />
-                    <TextBox x:Name="TxtName" 
-                             
-                             Width=" 250" HorizontalAlignment="Left" TextChanged="TxtName_TextChanged_1" />
+                    <TextBox x:Name="TxtName" Text="{Binding Path=Name}" Width=" 400" HorizontalAlignment="Left" />
                     <Label Content="Adresse :" />
-                    <TextBox x:Name="TxtAddress" Width=" 250" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="TxtAddress" Text="{Binding Path=PostalAddress}" Width=" 400" HorizontalAlignment="Left"/>
                     <Label Content="E Mail :" />
-                    <TextBox x:Name="TxtEMail" Width=" 250" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="TxtEMail" Text="{Binding Path=Email}" Width=" 400" HorizontalAlignment="Left"/>
                     <Label Content="TVA :" />
-                    <TextBox x:Name="TxtVAT" Width=" 250" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="TxtVAT" Text="{Binding Path=VatNumber}" Width=" 400" HorizontalAlignment="Left"/>
                     <Label Content="Nombre d'employés :" />
-                    <TextBox x:Name="TxtEmployeesNum" Width=" 250" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="TxtEmployeesNum" Text="{Binding Path=EmployeesNumber, Mode=OneWay}" Width=" 400" HorizontalAlignment="Left"/>
                 </StackPanel>
                 <StackPanel Margin="10,10" Grid.Column="1">
-                    <Button x:Name="ButtonChangeObjectProperties" Content="Changer propriétés sources"/>
-                    <Button x:Name="ButtonShowObjectProperties" Content="Afficher les propriétés sources"/>
+                    <Button x:Name="ButtonChangeObjectProperties" Content="forcer la propriétés sources (ELECTRATECH)" Click="ButtonChangeObjectProperties_Click_2"/>
+                    <Button x:Name="ButtonShowObjectProperties" Content="Afficher les propriétés sources" Click="ButtonShowObjectProperties_Click_1"/>
                 </StackPanel>
             </Grid>
             <Button x:Name="ButtonQuit" Content="Quitter" HorizontalAlignment="Center" Padding="5" Margin="0,35,0,0" Click="ButtonQuit_Click" />
-            
+
         </StackPanel>
 
     </Grid>

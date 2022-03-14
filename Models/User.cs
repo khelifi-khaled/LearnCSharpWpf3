@@ -321,16 +321,18 @@ namespace LearnCSharpWpf3.Models
                         }
                         else
                         {
-                            MessageBox.Show("La photo doit faire entre 5KB et 1MB", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning); return false;
+                            Console.WriteLine("La photo doit faire entre 5KB et 1MB", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning); return false;
                         }
                     }
 
                 }
-                MessageBox.Show("La photo ne peut être qu'en format jpg ou png", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning); return false;
+                Console.WriteLine("La photo ne peut être qu'en format jpg ou png", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning); return false;
             }
             else
             {
-                MessageBox.Show("Le chemin spécifié n'est pas valide", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning); return false;
+                Console.WriteLine("Le chemin spécifié n'est pas valide", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning); 
+                
+                return false;
             }
 
         }//END CheckPicture

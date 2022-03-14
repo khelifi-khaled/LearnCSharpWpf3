@@ -1,4 +1,5 @@
 ﻿using LearnCSharpWpf3.Models;
+using LearnCSharpWpf3.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,25 +26,30 @@ namespace LearnCSharpWpf3.Views
         public CompanyWindow(Company c)
         {
             ThisCompany = c;
+            DataContext = ThisCompany;
             InitializeComponent();
-            TxtName.Text = c.Name; 
-            TxtAddress.Text = c.PostalAddress;
-            TxtEMail.Text = c.Email;
-            TxtVAT.Text = c.VatNumber;
-            TxtEmployeesNum.Text = c.EmployeesNumber.ToString();
-
 
         }
         Company ThisCompany { get; set; }
 
         private void ButtonQuit_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void ButtonChangeObjectProperties_Click_2(object sender, RoutedEventArgs e)
+        {
+            ThisCompany.Name = "ELECTRATECH";
+            ThisCompany.PostalAddress = "19 rue des arbalestriers 1000 Bruxelles";
+            ThisCompany.Email = "contact@electratech.com";
+            ThisCompany.VatNumber = "BE 4444.719.444";
+            //ajouter un utilisateur.
 
         }
 
-        private void TxtName_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void ButtonShowObjectProperties_Click_1(object sender, RoutedEventArgs e)
         {
-            ThisCompany.Name = TxtName.Text;
+            ThisCompany.ShowProperties();
         }
     }
 }
