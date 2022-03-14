@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -8,10 +9,19 @@ using System.Windows;
 
 namespace LearnCSharpWpf3.Models
 {
-    public  class Company
+    public  class Company : INotifyPropertyChanged
     {
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
+
         private string _vatNumber;
         private string _email;
+        private String _name;
+        private string _postalAddress;
+       
 
         public Company(string name, string postalAddress, string vatNumber, string email, UserCollection users )
         {
@@ -31,7 +41,10 @@ namespace LearnCSharpWpf3.Models
             set
             {
                 if (CheckBelgianVatNumber(value))
+                {
                     _vatNumber = value;
+                    OnPropertyChanged(nameof(VatNumber));
+                }
             }
         }
         public string Email
@@ -40,7 +53,10 @@ namespace LearnCSharpWpf3.Models
             set
             {
                 if (CheckBelgianEMail(value))
+                {
                     _email = value;
+                    OnPropertyChanged(nameof(Email));
+                }
             }
         }
         private bool CheckBelgianVatNumber(string VAT)
@@ -70,10 +86,34 @@ namespace LearnCSharpWpf3.Models
             }
             return true;
         }
-        public string Name { get; set; }
-        public string PostalAddress { get; set; }
+        public string Name 
+        { get => _name ; 
+            set
+            {
+                _name = value;
+                OnPropertyChanged(nameof(Name));
+            }
+        }
+        public string PostalAddress 
+        {
+            get => _postalAddress;
+            set
+            {
+                _postalAddress = value;
+                OnPropertyChanged(nameof(PostalAddress));
+            }
+
+        }
+
+        
+
         public int EmployeesNumber => Users != null ? Users.Count : 0;
-        private UserCollection Users { get; }
+        private UserCollection Users { get; set; }
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public void ShowProperties()
         {

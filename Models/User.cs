@@ -256,6 +256,9 @@ namespace LearnCSharpWpf3.Models
             }
         }
 
+
+
+
         /// <summary>
         /// Check LastName or FirstName
         /// MAJ start each part, no double space or -, no special character, no accented character like éèê
@@ -462,7 +465,7 @@ namespace LearnCSharpWpf3.Models
         /// </summary>
         /// <param name="tryPassword"></param>
         /// <returns>true if password is correct</returns>
-        private bool IsRightPassword(string tryPassword)
+        public bool IsRightPassword(string tryPassword)
         {
             return tryPassword.Equals(this.Password);
         }//END IsRightPassword
@@ -550,7 +553,7 @@ namespace LearnCSharpWpf3.Models
 
     }//END CLASS
 
-
+    
     public class CustomDateTimeConverter : IsoDateTimeConverter
     {
         public CustomDateTimeConverter()

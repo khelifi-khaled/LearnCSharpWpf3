@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <StackPanel>
+       
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_Programme">
+                <MenuItem Header="_Test" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Utilisateurs">
+                <MenuItem Header="Login" x:Name="MenuItemUsersLogin" Click="MenuItemUsersLogin_Click" />
+                <MenuItem Header="Logout" x:Name="MenuItemUsersLogout" Click="MenuItemUsersLogout_Click" />
+                <MenuItem Header="Données personnelles" x:Name="MenuItemPersonalDatas" Click="MenuItemPersonalDatas_Click" />
+                <MenuItem Header="Gestion des utilisateurs" x:Name="MenuItemManageUsers" Click="MenuItemManageUsers_Click" />
+            </MenuItem>
+        </Menu>
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3*"/>
@@ -26,7 +41,10 @@
                 </ListView>
             </StackPanel>
             <StackPanel Grid.Column="1">
-                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="conected : " Margin="0 10 0 10 "/>
+                    <TextBlock Text="{Binding Path=UserConnected.FullName, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Margin="0 10 0 10 "/>
+                </StackPanel>
                 <Button x:Name="ButtonTestCreateFirstUsers" Content="Test create my first users" HorizontalAlignment="Center" Width="200" Click="ButtonTestCreateFirstUsers_Click"/>
                 <Button x:Name="ButtonTestEncapsulation" Content="Test encapsulation" HorizontalAlignment="Center" Width="200" Click="ButtonTestEncapsulation_Click"/>
                 <Button x:Name="ButtonTestStatic" Content="Test static" HorizontalAlignment="Center" Width="200" Click="ButtonTestStatic_Click"/>
@@ -42,8 +60,8 @@
             </StackPanel>
         </Grid>
         
-        
     </StackPanel>
+ 
     
     
     

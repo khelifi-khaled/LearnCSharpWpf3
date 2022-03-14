@@ -2,19 +2,25 @@
 using LearnCSharpWpf3.Utilities.DataAccess;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LearnCSharpWpf3.ViewModels
 {
-    public class MainWindowVM
+    public class MainWindowVM : INotifyPropertyChanged 
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
+
 
         private const string USERS_CSV_FILE = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\Utilisateurs.csv";
         private const string USERS_JSON_FILE = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\JsonUtilisateurs.json";
         private const string PHOTOS_PATH_DIR = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\photos\";
         private const string COMPANY_NAME = "SOLUTECH";
+        private User _userConnected; 
         public MainWindowVM()
         {
 
@@ -32,8 +38,7 @@ namespace LearnCSharpWpf3.ViewModels
             Users = UsersDataAccess.GetUsersDatas(); //get users collection datas from DataAccessSource(csv, json...).
 
 
-
-
+            
 
 
             // pour exporter les fichiers de csv to json
@@ -59,7 +64,25 @@ namespace LearnCSharpWpf3.ViewModels
         /// </summary>
         public UsersDataAccess UsersDataAccess { get; set; }
 
+        /// <summary>
+        /// Logged user to this application
+        /// </summary>
+        public User UserConnected
+        {
+            get => _userConnected;
+            set
+            {
+                _userConnected = value;
+                OnPropertyChanged(nameof(UserConnected));
+            }
+        }
         
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
     }//end class 
 
 }//end class 

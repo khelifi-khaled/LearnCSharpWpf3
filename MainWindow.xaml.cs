@@ -28,7 +28,7 @@ namespace LearnCSharpWpf3
         private const string PIC_DIR = @"C:\Users\Admin\Desktop\IRAM-ps\poo\photos";
         private const string USERS_CSV_FILE = @"C:\Users\Admin\Desktop\IRAM-ps\poo\Utilisateurs.csv";
 
-        public MainWindowVM MainVM;
+        public MainWindowVM MainVM { get; set; }
         public MainWindow()
         {
             MainVM = new MainWindowVM();
@@ -393,7 +393,26 @@ namespace LearnCSharpWpf3
             cwin.Show();
         }
 
+        private void MenuItemUsersLogin_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow Login = new LoginWindow(MainVM);
+            Login.Show();
+        }
 
+        private void MenuItemUsersLogout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItemPersonalDatas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItemManageUsers_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }//end class
 
 }//end project 
