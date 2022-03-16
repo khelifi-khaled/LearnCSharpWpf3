@@ -89,7 +89,8 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
 
         }//end GetUsersDatas
 
-        public override  void UpdateAllUsersDatas(UserCollection uc) { }
+        public override  void UpdateAllUsersDatas(UserCollection uc) 
+        { }
 
         public override void UpdateUserDatas(User u) { }
 

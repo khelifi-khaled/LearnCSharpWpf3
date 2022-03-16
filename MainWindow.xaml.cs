@@ -401,12 +401,21 @@ namespace LearnCSharpWpf3
 
         private void MenuItemUsersLogout_Click(object sender, RoutedEventArgs e)
         {
-
+            MainVM.UserConnected = null;
         }
 
         private void MenuItemPersonalDatas_Click(object sender, RoutedEventArgs e)
         {
+            PersonalDatasWindow1 PersonalDatas = new PersonalDatasWindow1(MainVM.UserConnected,MainVM.Users,MainVM.UsersDataAccess);
+            PersonalDatas.Show();
+        }
 
+     
+
+       
+        private void Exit_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
         private void MenuItemManageUsers_Click(object sender, RoutedEventArgs e)

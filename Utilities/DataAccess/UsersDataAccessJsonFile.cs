@@ -18,7 +18,7 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
 
         public UsersDataAccessJsonFile(string filePath, string[] extensions) : base(filePath, extensions) { }
 
-   
+  
 
         /// <summary>
         /// retrieve Users collection datas from the datasource Json file
@@ -46,10 +46,18 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
                 return null;
             }
         }//end GetUsersDatas
+
+
+
+
+
         /// <summary>
         /// update json source file from the users collection
         /// </summary>
         /// <param name="uc"></param>
+        /// 
+
+
         public override void UpdateAllUsersDatas(UserCollection uc)
         {
             if (IsValidAccessPath)
@@ -64,10 +72,14 @@ namespace LearnCSharpWpf3.Utilities.DataAccess
             {
                 Console.WriteLine("UpdateAllUsersDatas error can't update datasource file");
             }
-        }
+        }//end UpdateAllUsersDatas 
+
+
         public override void UpdateUserDatas(User u) 
         { }
-}
 
-    }
+
+    } //end class
+
+}//end project 
 

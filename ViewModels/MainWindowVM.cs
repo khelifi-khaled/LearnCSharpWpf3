@@ -30,9 +30,9 @@ namespace LearnCSharpWpf3.ViewModels
           
             //UsersDataAccessCsvFile uda = new UsersDataAccessCsvFile(USERS_CSV_FILE);
             //uncomment if data source is a csv file
-            UsersDataAccess = new UsersDataAccessCsvFile(USERS_CSV_FILE,new string[]{"txt","csv"});
+            //UsersDataAccess = new UsersDataAccessCsvFile(USERS_CSV_FILE,new string[]{"txt","csv"});
             //uncomment if datas source is a json file
-            //UsersDataAccess = new UsersDataAccessJsonFile(USERS_JSON_FILE, new string[] { "json" });
+            UsersDataAccess = new UsersDataAccessJsonFile(USERS_JSON_FILE, new string[] { "json" });
             //uncomment if datas source is a xml file
             //UsersDataAccess = new UsersDataAccessXmlFile(USERS_XML_FILE, new string[]{"xml","txt"});
             Users = UsersDataAccess.GetUsersDatas(); //get users collection datas from DataAccessSource(csv, json...).
@@ -51,6 +51,45 @@ namespace LearnCSharpWpf3.ViewModels
 
         }//end constructeur 
 
+
+
+
+        private bool _isConnected = false;
+
+        public bool IsConnected
+        {
+            get
+            {
+                return _isConnected;
+
+            }
+            set
+            {
+                _isConnected = value;
+                OnPropertyChanged(nameof(IsConnected));
+
+            }
+        }
+
+
+
+
+        private bool _isNotConnected = true;
+
+        public bool IsNotConnected
+        {
+            get
+            {
+                return _isNotConnected;
+
+            }
+            set
+            {
+                _isNotConnected = value;
+                OnPropertyChanged(nameof(IsNotConnected));
+
+            }
+        }
 
         /// <summary>
         /// Collection of all users in the databse (source file)
@@ -74,6 +113,8 @@ namespace LearnCSharpWpf3.ViewModels
             {
                 _userConnected = value;
                 OnPropertyChanged(nameof(UserConnected));
+                IsConnected = UserConnected != null;
+                IsNotConnected = UserConnected == null;
             }
         }
         

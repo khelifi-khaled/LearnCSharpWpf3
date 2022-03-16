@@ -12,13 +12,13 @@
             <MenuItem Header="_Programme">
                 <MenuItem Header="_Test" />
                 <Separator />
-                <MenuItem Header="_Exit" />
+                <MenuItem x:Name ="Exit" Header="_Exit" Click="Exit_Click_1" />
             </MenuItem>
             <MenuItem Header="_Utilisateurs">
-                <MenuItem Header="Login" x:Name="MenuItemUsersLogin" Click="MenuItemUsersLogin_Click" />
-                <MenuItem Header="Logout" x:Name="MenuItemUsersLogout" Click="MenuItemUsersLogout_Click" />
-                <MenuItem Header="Données personnelles" x:Name="MenuItemPersonalDatas" Click="MenuItemPersonalDatas_Click" />
-                <MenuItem Header="Gestion des utilisateurs" x:Name="MenuItemManageUsers" Click="MenuItemManageUsers_Click" />
+                <MenuItem Header="Login" x:Name="MenuItemUsersLogin" IsEnabled="{Binding Path= IsNotConnected ,Mode=OneWay, UpdateSourceTrigger=PropertyChanged }" Click="MenuItemUsersLogin_Click" />
+                <MenuItem Header="Logout" x:Name="MenuItemUsersLogout"  IsEnabled="{Binding Path= IsConnected ,Mode=OneWay, UpdateSourceTrigger=PropertyChanged }" Click="MenuItemUsersLogout_Click" />
+                <MenuItem Header="Données personnelles" x:Name="MenuItemPersonalDatas" IsEnabled= "{Binding Path= IsConnected ,Mode=OneWay, UpdateSourceTrigger=PropertyChanged }" Click="MenuItemPersonalDatas_Click" />
+                <MenuItem Header="Gestion des utilisateurs" x:Name="MenuItemManageUsers" IsEnabled="{Binding Path= IsConnected ,Mode=OneWay, UpdateSourceTrigger=PropertyChanged }" Click="MenuItemManageUsers_Click" />
             </MenuItem>
         </Menu>
 

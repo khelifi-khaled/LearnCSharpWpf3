@@ -18,6 +18,8 @@ namespace LearnCSharpWpf3.Views
     public partial class LoginWindow : Window
     {
         private MainWindowVM MwVM { get; set; }
+
+
         public LoginWindow(MainWindowVM mwvm)
         {
             InitializeComponent();

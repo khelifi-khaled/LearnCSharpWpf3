@@ -85,6 +85,19 @@ namespace LearnCSharpWpf3.Models
             }
         }
 
+
+        public String Phone { get; set; }
+
+        public String AccountNumber { get; set; }
+
+        public String Address { get; set; }
+
+        public String PersonalPhone { get; set; }
+
+        public String PersonalEMail { get; set; }
+        
+
+
         public string EMail { get; set; }
 
         public bool IsSafePassword => this.Password != DEFAULT_PASSWD;
