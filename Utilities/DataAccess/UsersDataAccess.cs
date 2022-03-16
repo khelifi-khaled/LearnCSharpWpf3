@@ -1,12 +1,9 @@
 ﻿using LearnCSharpWpf3.Models;
 using LearnCSharpWpf3.Utilities.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace LearnCSharpWpf3.Utilities.DataAccess

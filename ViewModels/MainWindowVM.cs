@@ -1,11 +1,7 @@
 ﻿using LearnCSharpWpf3.Models;
 using LearnCSharpWpf3.Utilities.DataAccess;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace LearnCSharpWpf3.ViewModels
 {
