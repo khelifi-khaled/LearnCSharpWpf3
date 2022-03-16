@@ -35,7 +35,7 @@
 
                 <!-- Email -->
                 <Label Content="Email :" />
-                <TextBox x:Name="TxtPersonalEMail" Text="{Binding Path=PersonalEMail , Mode=OneWay  }" Width="300" HorizontalAlignment="Left" IsReadOnly="True" Background="#eee"/>
+                <TextBox x:Name="TxtPersonalEMail" Text="{Binding Path=EMail , Mode=OneWay  }" Width="300" HorizontalAlignment="Left" IsReadOnly="True" Background="#eee"/>
 
                 <!-- N° Tel. intern  -->
                 <Label Content="N° Tel. intern :" />
