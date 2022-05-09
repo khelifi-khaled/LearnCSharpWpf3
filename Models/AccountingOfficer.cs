@@ -5,6 +5,8 @@ namespace LearnCSharpWpf3.Models
 {
     public class AccountingOfficer : User
     {
+         
+
         public AccountingOfficer() { }
 
         public AccountingOfficer (DateTime birthday, string lastName = "LastName", string firstName = "FirstName", int idUser = 0, int levelAccess = 1, string password = "Password01", string picture = "", bool gender = true)

@@ -21,6 +21,7 @@ namespace LearnCSharpWpf3.Views
 
 
         public LoginWindow(MainWindowVM mwvm)
+
         {
             InitializeComponent();
             MwVM = mwvm;

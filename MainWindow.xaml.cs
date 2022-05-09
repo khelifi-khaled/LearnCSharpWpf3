@@ -1,6 +1,9 @@
 ﻿using LearnCSharpWpf3.Models;
 using LearnCSharpWpf3.ViewModels;
 using LearnCSharpWpf3.Views;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 
 
@@ -185,25 +188,25 @@ namespace LearnCSharpWpf3
         }
         private void ButtonTestReadWriteCsvFile_Click_1(object sender, RoutedEventArgs e)
         {
-            //const string PROJECT_DIR = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\";
+            const string PROJECT_DIR = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\";
 
 
 
-            //List<string> listFileReader = new List<string>();
+            List<string> listFileReader = new List<string>();
 
-            //listFileReader = System.IO.File.ReadAllLines(PROJECT_DIR + "Utilisateurs.csv").ToList();
+            listFileReader = System.IO.File.ReadAllLines(PROJECT_DIR + "Utilisateurs.csv").ToList();
 
-            //foreach (string s in listFileReader)
-            //{
-            //    Console.WriteLine(s);
-            //}
-            //List<string> listFileWriter = new List<string>();
-            //listFileWriter = listFileReader.ToList();
-            //listFileWriter.Add("Electrician;Bruno;Demoulin;11;1;1;Julien14;23-09-90;demoulin.jpg");
-            //listFileWriter.Add("Mechanic;Jean;Virelle;12;1;1;3Tondeuse;5-07-92;virelle.jpg");
-            //System.IO.File.WriteAllLines(@"c:\temp\UtilisateursCopy2.csv", listFileWriter);
-            ////Apprend ajoute au fichier existant sans l'écraser.
-            ////System.IO.File.AppendAllLines(PROJECT_DIR + "UtilisateursCopy.csv", listFileWriter);
+            foreach (string s in listFileReader)
+            {
+                Console.WriteLine(s);
+            }
+            List<string> listFileWriter = new List<string>();
+            listFileWriter = listFileReader.ToList();
+            listFileWriter.Add("Electrician;Bruno;Demoulin;11;1;1;Julien14;23-09-90;demoulin.jpg");
+            listFileWriter.Add("Mechanic;Jean;Virelle;12;1;1;3Tondeuse;5-07-92;virelle.jpg");
+            System.IO.File.WriteAllLines(@"c:\temp\UtilisateursCopy2.csv", listFileWriter);
+            //Apprend ajoute au fichier existant sans l'écraser.
+            System.IO.File.AppendAllLines(PROJECT_DIR + "UtilisateursCopy.csv", listFileWriter);
 
         }
         private void ButtonTestLambdasOnList_Click_1(object sender, RoutedEventArgs e)

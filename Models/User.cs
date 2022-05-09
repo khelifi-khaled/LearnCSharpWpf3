@@ -81,15 +81,15 @@ namespace LearnCSharpWpf3.Models
         }
 
 
-        public String Phone { get; set; }
+        public string Phone { get; set; }
 
-        public String AccountNumber { get; set; }
+        public string AccountNumber { get; set; }
 
-        public String Address { get; set; }
+        public string Address { get; set; }
 
-        public String PersonalPhone { get; set; }
+        public string PersonalPhone { get; set; }
 
-        public String PersonalEMail { get; set; }
+        public string PersonalEMail { get; set; }
         
 
 

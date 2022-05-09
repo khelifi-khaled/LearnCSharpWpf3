@@ -16,7 +16,14 @@ namespace LearnCSharpWpf3.ViewModels
         private const string USERS_JSON_FILE = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\JsonUtilisateurs.json";
         private const string PHOTOS_PATH_DIR = @"C:\Users\Admin\source\repos\LearnCSharpWpf3\photos\";
         private const string COMPANY_NAME = "SOLUTECH";
+
+
+
         private User _userConnected; 
+
+
+
+
         public MainWindowVM()
         {
 
@@ -37,7 +44,7 @@ namespace LearnCSharpWpf3.ViewModels
             
 
 
-            // pour exporter les fichiers de csv to json
+            // pour exporter les fichiers de csv au json
 
             //UsersDataAccessJsonFile UsersDataAccessForJsonSave = new UsersDataAccessJsonFile(@"C:\temp\JsonUtilisateurs.json", new string[] { "json" });
             //UsersDataAccessForJsonSave.UpdateAllUsersDatas(Users);
@@ -46,6 +53,8 @@ namespace LearnCSharpWpf3.ViewModels
 
 
         }//end constructeur 
+
+
 
 
 
@@ -87,6 +96,9 @@ namespace LearnCSharpWpf3.ViewModels
             }
         }
 
+
+
+
         /// <summary>
         /// Collection of all users in the databse (source file)
         /// </summary>
@@ -98,6 +110,8 @@ namespace LearnCSharpWpf3.ViewModels
         /// Manager to the users data access (Csv, Json, XAML, SQL...)
         /// </summary>
         public UsersDataAccess UsersDataAccess { get; set; }
+
+
 
         /// <summary>
         /// Logged user to this application

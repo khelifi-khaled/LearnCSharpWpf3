@@ -33,7 +33,6 @@ namespace LearnCSharpWpf3.Views
         {
             UsersDataAccess.UpdateAllUsersDatas(Users);
             
-
         }
 
         private void ButtonQuitter_Click(object sender, RoutedEventArgs e)

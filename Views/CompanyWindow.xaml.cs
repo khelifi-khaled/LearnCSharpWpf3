@@ -18,6 +18,7 @@ namespace LearnCSharpWpf3.Views
             InitializeComponent();
 
         }
+
         Company ThisCompany { get; set; }
 
         private void ButtonQuit_Click(object sender, RoutedEventArgs e)
